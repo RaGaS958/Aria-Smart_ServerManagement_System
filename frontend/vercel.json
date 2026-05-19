@@ -1,0 +1,11 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "installCommand": "npm install --legacy-peer-deps",
+  "rewrites": [{ "source": "/((?!api/).*)", "destination": "/index.html" }],
+  "env": {
+    "VITE_API_URL": "@aria_api_url",
+    "VITE_WS_URL":  "@aria_ws_url"
+  }
+}
